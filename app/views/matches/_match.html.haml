@@ -1,5 +1,4 @@
-%li{:class => defined?(@clan) && match.result_string(@clan)}
-  =clan_span match, match.clans.first
-  =link_to match.score(match.clans.first).to_s+":"+match.score(match.clans.last).to_s, match
-  =clan_span match, match.clans.last
-  =clan_span match, match.clans.first
+%li
+  =link_to match.clans.first.name, match.clans.first
+  =link_to "#{match.score(match.clans.first)} : #{match.score(match.clans.last)}", match
+  =link_to match.clans.last.name, match.clans.last

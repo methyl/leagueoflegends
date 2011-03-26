@@ -22,6 +22,7 @@ class Match < ActiveRecord::Base
     scores_hash[clan.id]
   end
 
+
   def result_string(clan)
     if self.played
       return "draw" if self.winner_id == nil

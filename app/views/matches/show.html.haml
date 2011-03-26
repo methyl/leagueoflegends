@@ -1,14 +1,15 @@
 %h3
   Players
 
--for clan in @match.clans
+-@match.clans.each do |clan|
   %h4= clan.name
   %ul
-    -@match.participations.by_clan(clan).each do |participation|
+    -@participations[clan.id].each do |participation|
       %li
-        =participation.player.name
-        =participation.champion.name
+        %strong
+          =participation.player.name
+        picked
+        %strong
+          =participation.champion.name
 
 
--for player in @match.clans[1].players
-  =player.name
