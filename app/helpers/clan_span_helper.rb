@@ -1,0 +1,2 @@
+module ClanSpanHelper
+end

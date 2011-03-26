@@ -1,0 +1,7 @@
+%h3
+  test
+%ul.match_list
+- @matches.each do |match|
+  =render match
+
+=paginate @matches

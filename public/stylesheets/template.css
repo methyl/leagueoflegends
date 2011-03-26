@@ -1,0 +1,21 @@
+span.bold{
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+li.win, li.win a{
+    color:#0f0;
+}
+
+li.draw, li.draw a{
+    color:#ff0;
+}
+
+li.lost, li.lost a{
+    color:#f00;
+}
+
